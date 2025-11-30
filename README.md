@@ -18,13 +18,13 @@ The Anti-Vietnamese government (rebellious) post classifier requires the followi
 
 ### Model Evaluation Results Summary
 
-| Model (File) | Accuracy | F1-Score |
-| :--- | :--- | :--- | :--- |
-| `BERT` | **0.92** | **0.6444** |
-| `mBART` | 0.89 | 0.52 |
-| `Vistral` | 0.90 | 0.60 |
-| `Transformers` | 0.88 | 0.56 |
-| `GRU` | 0.85 | 0.45 |
+| Model (File)   | Accuracy | F1-Score   |
+| -------------- | -------- | ---------- |
+| `BERT`         | **0.92** | **0.6444** |
+| `mBART`        | 0.89     | 0.52       |
+| `Vistral`      | 0.90     | 0.60       |
+| `Transformers` | 0.88     | 0.56       |
+| `GRU`          | 0.85     | 0.45       |
 
 ### Insight
 Even though Vistral is a Vietnamese-native LLM, BERT remains the strongest model for classification because encoder-based architectures are optimized for discriminative decision boundaries, not generation. Vistral understands Vietnamese well, but its larger generative design requires more data and tuning to adapt effectively to classification, whereas BERT learns compact class-separating features more efficiently on a dataset of this scale. In short, language specialization alone is not enough; task-oriented architecture still plays a dominant role in performance.
